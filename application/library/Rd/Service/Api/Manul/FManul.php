@@ -1,13 +1,13 @@
 <?php
-namespace Rd\Service\Api\Sms;
+namespace Rd\Service\Api\Manul;
 
-class FSms {
+class FManul {
 
     public static function factory($o) {
 
         switch ($o->method) {
-        case 'post' :
-            return new \Rd\Service\Api\Sms\Post($o);
+        case 'usra' :
+            return new \Rd\Service\Api\Manul\Usra($o);
         default :
             return 1001;
         }

@@ -1,41 +1,23 @@
 <?php
-namespace Rd\Vo\In\Sms;
+namespace Rd\Vo\In\Manul;
 
 use Rd\Vo\Vo;
 
-class Post extends Vo {
+class Usra extends Vo {
 
-    protected $ophone = null;
-    protected $iphone = null;
-    protected $content = null;
-    protected $channel = null;
-    protected $delay = null;
+    protected $uid = '';
+    protected $name = '';
+    protected $type = '';
+    protected $cert = '';
+    protected $cert_no = '';
+    protected $mobile = '';
 
-    protected $validate = array('ophone' => array('required' => TRUE, 'min' => 0, 'max' => 11),
-                                'iphone' => array('required' => TRUE, 'min' => 0, 'max' => 11),
-                                'content' => array('required' => TRUE, 'min' => 0, 'max' => 70),
-                                'channel' => array('required' => TRUE, 'min' => 0, 'max' => 1),
-                                'delay' => array('required' => TRUE, 'min' => 0, 'max' => 32));
-
-    public function getOphone() {
-        return $this->ophone;
-    }
-
-    public function getIphone() {
-        return $this->iphone;
-    }
-
-    public function getContent() {
-        return $this->content;
-    }
-
-    public function getChannel() {
-        return $this->channel;
-    }
-
-    public function getDelay() {
-        return $this->delay;
-    }
+    protected $validate = array('uid' => array('required' => TRUE, 'min' => 0, 'max' => 20),
+                                'name' => array('required' => TRUE, 'min' => 0, 'max' => 80),
+                                'type' => array('required' => TRUE, 'min' => 0, 'max' => 1),
+                                'cert' => array('required' => TRUE, 'min' => 0, 'max' => 3),
+                                'cert_no' => array('required' => TRUE, 'min' => 0, 'max' => 30),
+                                'mobile' => array('required' => TRUE, 'min' => 0, 'max' => 11));
 
     public function __construct($argv) {
         foreach ($argv as $key => $value) {

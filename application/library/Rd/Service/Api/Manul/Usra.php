@@ -1,7 +1,7 @@
 <?php
-namespace Rd\Service\Api\Sms;
+namespace Rd\Service\Api\Manul;
 
-class Post {
+class Usra {
 
     private $var_ = null;
 
@@ -34,7 +34,7 @@ class Post {
     public function run() {
 
         // vo
-        $vo = new \Rd\Vo\In\Sms\Post($this->var_->data);
+        $vo = new \Rd\Vo\In\Manul\Usra($this->var_->data);
 
         if (!is_object($vo)) {
             return $this->error_(1003, $vo);
@@ -43,8 +43,9 @@ class Post {
             return $this->error_(1002, $vo->getError());
         }
 
-        $bz = new \Rd\Service\Hdl\Sms\Post($vo);
-        return $this->success_($bz->producer());
+        $bz = new \Rd\Service\Hdl\Manul\Usra($vo);
+
+        return $this->success_($bz->exec());
     }
 
 

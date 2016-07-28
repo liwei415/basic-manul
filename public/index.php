@@ -3,7 +3,7 @@ ini_set('session.name', 'PHPSESSID_BASIC_MANUL');
 
  /* 错误打印到网页: 0 & 1 */
 if (ini_get('yaf.environ') == 'develop') {
-    ini_set('display_errors', 0);
+    ini_set('display_errors', 1);
 }
 
 date_default_timezone_set("Asia/Shanghai");
