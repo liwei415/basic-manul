@@ -1,7 +1,7 @@
 <?php
-namespace Rd\Domain\Sms;
+namespace Rd\Domain\Manul;
 
-class Log {
+class Usra {
 
     private $id_ = null;
     private $ophone_ = null;

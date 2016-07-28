@@ -12,6 +12,7 @@ class Usra {
     // 同步接口 exec
     public function exec() {
 
+        $usra = new \Rd\Domain\Manul\Usra();
         return 'Hdl example';
     }
 
