@@ -1,7 +1,7 @@
 <?php
-namespace Rabbit;
+namespace Manul;
 
-class SmsModel {
+class UsraModel {
 
     protected $ename_ = 'esms';
     protected $qname_ = 'qsms';

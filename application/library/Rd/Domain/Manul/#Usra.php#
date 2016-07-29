@@ -5,10 +5,10 @@ class Usra {
 
     private $token_ = null;
     private $plat_date_ = null;
-    private $iphone_ = null;
-    private $content_ = null;
-    private $channel_ = null;
-    private $status_ = null;
+    private $plat_time_ = null;
+    private $plat_no_ = null;
+    private $uid_ = null;
+    private $username_ = null;
     private $delay_ = null;
     private $create_time_ = null;
     private $update_time_ = null;

@@ -13,6 +13,8 @@ class Usra {
     public function exec() {
 
         $usra = new \Rd\Domain\Manul\Usra();
+        $usra->setOphone($this->var_->getOphone());
+
         return 'Hdl example';
     }
 

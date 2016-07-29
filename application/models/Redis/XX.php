@@ -1,5 +1,5 @@
 <?php
-namespace Redis\Common;
+namespace Redis;
 /**
  * @desc: 文件描述
  * ==============================================
